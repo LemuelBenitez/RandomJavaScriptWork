@@ -1,0 +1,73 @@
+<html>
+    <head>
+          <title>JavaScript</title>
+
+    </head>
+
+    <body>
+    <h1>How many fingers am I holding up?</h1>
+      <input type="text" id="guess">
+       <button id= "enter">Guess</button>
+
+         <script type="text/JavaScript">
+            
+            //  document.getElementById("button").onclick = function(){
+        //      document.getElementById("text").innerHTML = "Hello Lemuel"
+        //      };
+
+        //  document.getElementById("button2").onclick = function(){
+        //       document.getElementById("text2").innerHTML +=  " Awesome"
+        //       document.getElementById("blank").innerHTML = "<h1>Never Fear! Javascript is Here!</h1>"
+        //      }
+
+        //      // display = none, removes element as if it's never existed
+        //      // opacity = 0, just renders it invisible but still present on site/code
+        //     document.getElementById("style").onclick = function(){
+        //         document.getElementById("texts").style.display = "none";
+        //     }
+
+        // document.getElementById("button1").onclick = function(){
+        //     document.getElementById("circle1").style.display = "none"
+        // }
+
+        // document.getElementById("button2").onclick = function(){
+        //     document.getElementById("circle2").style.display = "none"
+        // }
+
+        // document.getElementById("button").onclick = function(){
+        //     var textEntered = "";
+        //     textEntered = document.getElementById("input").value;
+             
+        //      document.getElementById("sometext").innerHTML = textEntered ;
+        //
+        // }
+
+        // var myArray = new Array();
+        // myArray[0]= "pizza";
+        // myArray[1]= "chocolate";
+
+        // var tweets = ["Morning everyone", "I love Coffee"]
+        // tweets.push("Back to work")
+        // console.log(tweets);
+
+       
+        document.getElementById("enter").onclick = function(){
+            
+            val rand = Math.floor(Math.random() * 6);
+            alert("hi");
+            
+            console.log(rand);
+
+            if( document.getElementById("guess").value == rand ){
+                alert("You've guessed right! The number was " + rand);
+            }else{
+                alert("You've guessed wrong... The number was " + rand);
+            }
+
+        }
+        </script>
+
+    </body>
+
+    
+</html>
